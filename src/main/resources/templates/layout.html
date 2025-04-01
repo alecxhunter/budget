@@ -9,9 +9,10 @@
     <title>Htmx Demo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" >
     <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<main class="container">
+<main class="container-fluid">
     <header th:insert="~{fragments/header :: header}">
 
     </header>
