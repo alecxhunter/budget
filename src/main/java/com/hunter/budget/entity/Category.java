@@ -25,4 +25,7 @@ public class Category {
     @OneToMany(cascade = CascadeType.ALL
     , fetch = FetchType.LAZY, mappedBy = "parent")
     private List<Category> subCategories;
+
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "category")
+    private List<Transaction> transactions;
 }
